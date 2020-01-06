@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Raleway", sans-serif;
+    background-image: linear-gradient(to top right, rgb(0, 255, 145), rgb(10, 245, 154), rgb(19, 236, 162), rgb(29, 226, 171), rgb(38, 216, 180), rgb(48, 206, 188), rgb(57, 197, 197), rgb(67, 187, 205), rgb(76, 177, 214), rgb(86, 167, 223), rgb(95, 158, 231), rgb(105, 148, 240));
+
+}
+.form{
+    display: flex;
+    min-height: 100vh;
+    margin: auto;
+    max-width: 500px;
+}
+.login-form{
+    width: 100%;
+    background: #3e4bff;
+    margin: auto;
+    padding: 100px 45px 30px 45px;
+    position: relative;
+    text-align: center;
+
+}
+.item{
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.circle{
+    position: absolute;
+    width: 185px;
+    height: 180px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, rgb(64, 190, 203), rgb(67, 187, 205), rgb(70, 184, 208), rgb(69, 184, 207), rgb(70, 184, 208), rgb(71, 183, 209), rgb(72, 181, 210), rgb(72, 182, 209), rgb(72, 181, 210), rgb(72, 182, 209), rgb(72, 181, 210), rgb(70, 183, 208));
+    top: -90px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.man{
+    width: 155px;
+    height: 150px;
+    margin-top: 15px;
+    border-radius: 50%;
+    background: #09ffb0;
+    padding: 17px;
+    margin-left: 15px;
+    position: relative;
+}
+.man:before{
+    content: "";
+    width: 165px;
+    height: 160px;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+.image{
+    width: 80px;
+}
+.form-input{
+    width: 100%;
+    padding: 10px 0 10px 40px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 20px;
+    position: relative;
+    border: none;
+
+}
+.form-input::-webkit-input-placeholder {
+    color: rgba(69, 72, 179, 0.74);
+}
+.label{
+    position: absolute;
+    width: 40px;
+    z-index: 1;
+    margin-left: -10px;
+    font-size: 13px;
+    padding: 10px;
+    background: #09ffb0;
+    border-radius: 8px 0 0 8px;
+}
+
+.checkbox{
+    display: none;
+
+ }
+.check{
+    padding-left: 20px;
+    color: white;
+}
+.check:before{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    vertical-align: bottom;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked + .check:before{
+    background-image: url("../image/cancel (1).png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+
+}
+
+h2{
+    text-transform: uppercase;
+    color: #09ffb0;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+button{
+    display: block;
+    margin: auto;
+    padding: 10px 15px 10px 15px;
+    font-size: 28px;
+    border-radius: 13px;
+    border: none;
+    color: white;
+    background: #09ffb0;
+    margin-top: 25px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
